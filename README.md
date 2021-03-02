@@ -8,3 +8,4 @@
 <img src="https://img.shields.io/badge/Redis-★★★☆☆-red?style=plastic-square&logo=Redis&logoColor=white"/> <img src="https://img.shields.io/badge/ElasticSearch-★★★☆☆-yellow?style=plastic-square&logo=ElasticSearch&logoColor=white"/> <img src="https://img.shields.io/badge/Kafak-★★★☆☆-231F20?style=plastic-square&logo=Apache Kafka&logoColor=white"/>
 
 ### 📘 API Architecture
+![ex_screenshot](./image/api_architecture.png)
