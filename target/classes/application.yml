@@ -1,0 +1,29 @@
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  kafka:
+    consumer:
+      auto-offset-reset: earliest
+      bootstrap-servers: localhost:9092
+      group-id: foo
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      properties:
+        spring:
+          json:
+            add:
+              type:
+                headers: false
+            trusted:
+              packages: com.duzon.noti.model
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+    producer:
+      acks: all
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      properties:
+        spring:
+          json:
+            add:
+              type:
+                headers: false
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
